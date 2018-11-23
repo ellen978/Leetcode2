@@ -9,7 +9,6 @@ Also, a word is always similar with itself. For example, the sentences words1 = 
 Finally, sentences can only be similar if they have the same number of words. So a sentence like words1 = ["great"] can never be similar to words2 = ["doubleplus","good"].
 
 Note:
-
 The length of words1 and words2 will not exceed 1000.
 The length of pairs will not exceed 2000.
 The length of each pairs[i] will be 2.
