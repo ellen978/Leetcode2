@@ -18,6 +18,4 @@ class Solution:
     def shortestWordDistance(self, words, word1, word2):
         index1=set([i for i in range(len(words)) if words[i]==word1])
         index2=set([i for i in range(len(words)) if words[i]==word2])
-        i=0
-        ret_min=float('inf')
         return min([abs(x-y) for x in index1 for y in index2 if x!=y])
