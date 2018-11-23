@@ -16,6 +16,12 @@ You may assume word1 and word2 are both in the list.
 
 class Solution:
     def shortestWordDistance(self, words, word1, word2):
+        """
+        :type words: List[str]
+        :type word1: str
+        :type word2: str
+        :rtype: int
+        """
         index1=set([i for i in range(len(words)) if words[i]==word1])
         index2=set([i for i in range(len(words)) if words[i]==word2])
         return min([abs(x-y) for x in index1 for y in index2 if x!=y])
